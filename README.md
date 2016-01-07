@@ -18,7 +18,7 @@ Manually add the following to your `composer.json`, in the `require` section:
 
 ```javascript
 "require": {
-    "zbmodules/zb-utils": "~0.1.0-dev"
+    "bvoronov/zb-utils": "~0.1.0-dev"
 }
 ```
 

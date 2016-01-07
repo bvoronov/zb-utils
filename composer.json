@@ -1,5 +1,5 @@
 {
-    "name": "zbmodules/zb-utils",
+    "name": "bvoronov/zb-utils",
     "description": "Module providing common utils and assets",
     "type": "library",
     "version": "0.1.0",

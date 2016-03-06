@@ -4,8 +4,6 @@ namespace ZB\Utils\Entity;
 /**
  * Class CreatedAtProviderTrait
  *
- * @property \DateTime createdAt
- *
  * @package ZB\Utils\Entity
  */
 trait CreatedAtProviderTrait

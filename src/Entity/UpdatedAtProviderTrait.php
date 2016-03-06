@@ -2,11 +2,11 @@
 namespace ZB\Utils\Entity;
 
 /**
- * Class UpdateAtProviderTrait
+ * Class UpdatedAtProviderTrait
  *
  * @package ZB\Utils\Entity
  */
-trait UpdateAtProviderTrait
+trait UpdatedAtProviderTrait
 {
     /**
      * @return \DateTime
@@ -20,7 +20,7 @@ trait UpdateAtProviderTrait
      * @param  \DateTime $timestamp
      * @return \ZB\Utils\Entity\UpdatedAtProviderInterface
      */
-    public function setUpdateAt(\DateTime $timestamp)
+    public function setUpdatedAt(\DateTime $timestamp)
     {
         $this->updatedAt = $timestamp;
 

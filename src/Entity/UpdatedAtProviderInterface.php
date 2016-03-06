@@ -17,5 +17,5 @@ interface UpdatedAtProviderInterface
      * @param  \DateTime $timestamp
      * @return \ZB\Utils\Entity\UpdatedAtProviderInterface
      */
-    public function setUpdateAt(\DateTime $timestamp);
+    public function setUpdatedAt(\DateTime $timestamp);
 } 

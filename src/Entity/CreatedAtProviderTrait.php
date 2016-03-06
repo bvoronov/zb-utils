@@ -4,6 +4,8 @@ namespace ZB\Utils\Entity;
 /**
  * Class CreatedAtProviderTrait
  *
+ * @property \DateTime createdAt
+ *
  * @package ZB\Utils\Entity
  */
 trait CreatedAtProviderTrait
@@ -13,6 +15,6 @@ trait CreatedAtProviderTrait
      */
     public function getCreatedAt()
     {
-        return $this->getCreatedAt;
+        return $this->createdAt;
     }
 } 

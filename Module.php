@@ -32,7 +32,7 @@ class Module
 
         // register enums in doctrine
         $config = $serviceManager->get('Config');
-        $enums = $config['enum'];
+        $enums = $config['zb-utils']['enum'];
         foreach ($enums as $code => $class) {
             DoctrineType::addType($code, $class);
         }

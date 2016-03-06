@@ -22,6 +22,11 @@ return array(
 
     'doctrine' => array(
         'driver' => array(
+            'YamlDriver' => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\YamlDriver',
+                'paths' => array(),
+                'cache' => 'apc',
+            ),
             'configuration' => array(
                 'orm_default' => array(
                     'metadata_cache' => 'apc',
@@ -43,5 +48,7 @@ return array(
         'ZB\\Utils\\Enum\EnumValidator' => array('enum' => 'string')
     ),
 
-    'enum' => array()
+    'zb-utils' => array(
+        'enum' => array()
+    )
 );

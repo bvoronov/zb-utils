@@ -34,7 +34,9 @@ class Module
         $config = $serviceManager->get('Config');
         $enums = $config['zb-utils']['enum'];
         foreach ($enums as $code => $class) {
-            DoctrineType::addType($code, $class);
+            if (!DoctrineType::hasType($code)) {
+                DoctrineType::addType($code, $class);
+            }
         }
     }
 

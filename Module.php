@@ -25,8 +25,8 @@ class Module
     public function registerEnum($serviceManager)
     {
         /** @var $em \Doctrine\ORM\EntityManager */
-        $platform = $serviceManager->get('em')
-            ->getConnection()
+        $em = $serviceManager->get('em');
+        $platform = $em->getConnection()
             ->getDatabasePlatform();
         $platform->registerDoctrineTypeMapping('enum', 'string');
 

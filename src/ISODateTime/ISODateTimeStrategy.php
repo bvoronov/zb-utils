@@ -31,20 +31,21 @@ class ISODateTimeStrategy implements StrategyInterface
      * Converts the given value so that it can be hydrated by the hydrator.
      *
      * @param  mixed $value The original value.
-     * @param  array $data (optional) The original data for context.
      * @return mixed Returns the value that should be hydrated.
      * @throws \InvalidArgumentException
      */
-    public function hydrate($value, array $data = null)
+    public function hydrate($value)
     {
-        if (null !== $value) {
-            if (!$value instanceof \DateTime) {
-                throw new \InvalidArgumentException('Expected DateTime object');
-            }
-            // change timezone to server timezone
-            $timezone = new \DateTimeZone(date_default_timezone_get());
-            $value->setTimezone($timezone);
+        if (null === $value) {
+            return $value;
         }
+
+        if (!$value instanceof \DateTime) {
+            throw new \InvalidArgumentException('Expected DateTime object');
+        }
+        // change timezone to server timezone
+        $timezone = new \DateTimeZone(date_default_timezone_get());
+        $value->setTimezone($timezone);
 
         return $value;
     }

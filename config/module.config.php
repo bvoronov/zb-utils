@@ -11,6 +11,7 @@ return array(
             'Hashids' => 'ZB\\Utils\\Hashids\\HashidsFactory'
         ),
         'invokables' => array(
+            'TimezoneStrategy' => 'ZB\\Utils\\ISODateTime\\TimezoneStrategy',
             'ISODateTimeStrategy' => 'ZB\\Utils\\ISODateTime\\ISODateTimeStrategy',
             'HashidsStrategy' => 'ZB\\Utils\\Hashids\\HashidsStrategy',
         ),

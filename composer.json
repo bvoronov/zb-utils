@@ -11,7 +11,7 @@
         "zfcampus/zf-apigility": "~1.1",
         "zfcampus/zf-apigility-documentation": "^1.0.5",
         "zfcampus/zf-development-mode": "~2.0",
-        "zfcampus/zf-apigility-doctrine": "^1.0",
+        "zfcampus/zf-apigility-doctrine": "2.0.*",
         "doctrine/doctrine-orm-module": "^0.9.1",
         "zfr/zfr-cors": "1.*",
         "hashids/hashids": "^1.0",

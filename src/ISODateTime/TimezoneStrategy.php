@@ -1,5 +1,5 @@
 <?php
-namespace ZB\Utils\ISODateTime\ISODateTimeStrategy;
+namespace ZB\Utils\ISODateTime;
 
 use Zend\Stdlib\Hydrator\Strategy\StrategyInterface;
 
